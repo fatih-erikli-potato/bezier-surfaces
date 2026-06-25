@@ -1470,19 +1470,19 @@ function togglearrayelement(array, element) {
 function createtoolselement() {
   const toolselement = div("#tools");
   const views = [
-    ["/pointer.png", () => {
+    ["pointer.png", () => {
       view = "create";
       render();
     }, () => view == "create"],
-    ["/transform.png", () => {
+    ["transform.png", () => {
       view = "transform";
       render();
     }, () => view == "transform"],
-    ["/zoom-in.png", () => {
+    ["zoom-in.png", () => {
       viewport["zoom"] *= 2;
       render();
     }, () => false],
-    ["/zoom-out.png", () => {
+    ["zoom-out.png", () => {
       viewport["zoom"] /= 2;
       render();
     }, () => false]
